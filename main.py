@@ -25,7 +25,9 @@ class Sb_Main_TestCases(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # inst.driver = webdriver.Firefox()
-        s = Service("C:\\Sviluppo\\SMB_Main_TestCases\\DriversSelenium\\chromedriver.exe")  # pp
+
+        s = Service ("//home//io//Progetti//SMB_Main_TestCase_Prova_2//DriversSelenium//chromedriver")
+#        s = Service("C:\\Sviluppo\\SMB_Main_TestCases\\DriversSelenium\\chromedriver.exe")  # pp
         cls.driver = webdriver.Chrome(service=s)  # pp
         #cls.driver = webdriver.Chrome() #pp
         cls.driver.implicitly_wait(13)
